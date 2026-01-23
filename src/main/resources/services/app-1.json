@@ -1,5 +1,5 @@
 {
-  "@class" : "org.apereo.cas.services.RegexRegisteredService",
+  "@class" : "org.apereo.cas.services.CasRegisteredService",
   "serviceId" : "^http://localhost:.*",
   "name" : "local app",
   "id" : 1,

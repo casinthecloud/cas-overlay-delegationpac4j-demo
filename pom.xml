@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.casinthecloud</groupId>
     <artifactId>cas-pac4j-oauth-demo</artifactId>
-    <version>7.0.10-SNAPSHOT</version>
+    <version>7.1.6-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <repositories>
@@ -37,6 +37,21 @@
             <artifactId>cas-server-support-pac4j-webflow</artifactId>
             <version>${cas.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-support-pac4j-cas</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-support-pac4j-saml</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-support-pac4j-oidc</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -69,7 +84,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>3.2.1</version>
+                <version>3.3.3</version>
                 <configuration>
                     <mainClass>org.apereo.cas.web.CasWebApplication</mainClass>
                     <excludes>
@@ -101,7 +116,7 @@
     </build>
 
     <properties>
-        <cas.version>7.0.10.1</cas.version>
+        <cas.version>7.1.6.2</cas.version>
         <java.version>21</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
