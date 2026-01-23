@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.casinthecloud</groupId>
     <artifactId>cas-pac4j-oauth-demo</artifactId>
-    <version>7.0.0-SNAPSHOT</version>
+    <version>7.0.10-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <repositories>
@@ -37,6 +37,12 @@
             <artifactId>cas-server-support-pac4j-webflow</artifactId>
             <version>${cas.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.42</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -44,9 +50,8 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.2.0</version>
+                <version>3.3.1</version>
                 <configuration>
-                    <warName>cas</warName>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                     <recompressZippedFiles>false</recompressZippedFiles>
                     <archive>
@@ -64,7 +69,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.2.0.RELEASE</version>
+                <version>3.2.1</version>
                 <configuration>
                     <mainClass>org.apereo.cas.web.CasWebApplication</mainClass>
                     <excludes>
@@ -85,7 +90,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.0</version>
+                <version>3.8.1</version>
                 <configuration>
                     <release>${java.version}</release>
 
@@ -96,8 +101,9 @@
     </build>
 
     <properties>
-        <cas.version>7.0.0-RC1</cas.version>
-        <java.version>17</java.version>
+        <cas.version>7.0.10.1</cas.version>
+        <java.version>21</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
 </project>

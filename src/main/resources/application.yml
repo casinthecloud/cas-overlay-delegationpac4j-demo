@@ -7,7 +7,7 @@ cas.tgc.crypto.enabled: false
 cas.webflow.crypto.enabled: false
 
 cas.server.name: http://localhost:8080
-cas.server.prefix: http://localhost:8080/cas
+cas.server.prefix: ${cas.server.name}/cas
 cas.host.name: castest
 
 cas.authn.oauth.code.timeToKillInSeconds: 30000
@@ -22,9 +22,9 @@ cas.authn.pac4j.twitter.secret: aKmvleltXAmLKcnlMgzRjTsCnhV3QVMVDh153xJttCo
 cas.authn.pac4j.saml[0].keystorePassword: pac4j-demo-passwd
 cas.authn.pac4j.saml[0].privateKeyPassword: pac4j-demo-passwd
 cas.authn.pac4j.saml[0].keystorePath: classpath:/samlKeystore.jks
-cas.authn.pac4j.saml[0].identityProviderMetadataPath: classpath:/metadata-okta.xml
+cas.authn.pac4j.saml[0].metadata.identity-provider-metadata-path: classpath:/metadata-okta.xml
 cas.authn.pac4j.saml[0].serviceProviderEntityId: http://localhost:8080/cas/login?client_name=SAML2Client
-cas.authn.pac4j.saml[0].serviceProviderMetadataPath: /tmp/sp-cas62-metadata.xml
+cas.authn.pac4j.saml[0].metadata.service-provider.file-system.location: /tmp/sp-cas62-metadata.xml
 cas.authn.pac4j.saml[0].clientName: SAML2Client
 cas.authn.pac4j.cas[0].clientName: CAS
 cas.authn.pac4j.cas[0].loginUrl: https://casserverpac4j.herokuapp.com/login
