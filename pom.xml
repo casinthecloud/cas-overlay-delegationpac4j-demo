@@ -56,7 +56,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.42</version>
+            <version>1.18.46</version>
         </dependency>
     </dependencies>
 
@@ -116,7 +116,7 @@
     </build>
 
     <properties>
-        <cas.version>7.3.8</cas.version>
+        <cas.version>7.3.8.1</cas.version>
         <java.version>21</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
