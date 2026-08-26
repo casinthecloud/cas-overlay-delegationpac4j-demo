@@ -1,13 +1,13 @@
 ## What is this project?
 
-This *cas-pac4j-oauth-demo* project has been created to test the authentication delegation in the CAS server.
+This *cas-overlay-delegationpac4j-demo* project has been created to test the authentication delegation in the CAS server.
 
 ## Build & test
 
 Build the project:
 
 ```shell
-cd cas-pac4j-oauth-demo
+cd cas-overlay-delegationpac4j-demo
 mvn clean package
 ```
 
