@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.casinthecloud</groupId>
-    <artifactId>cas-pac4j-oauth-demo</artifactId>
+    <artifactId>cas-overlay-delegationpac4j-demo</artifactId>
     <version>8.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
 
@@ -102,7 +102,7 @@
     </build>
 
     <properties>
-        <cas.version>8.0.1.1</cas.version>
+        <cas.version>8.0.1.2</cas.version>
         <java.version>25</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
