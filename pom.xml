@@ -116,7 +116,7 @@
     </build>
 
     <properties>
-        <cas.version>7.3.8.2</cas.version>
+        <cas.version>7.3.8.3</cas.version>
         <java.version>21</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
